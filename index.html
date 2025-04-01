@@ -122,8 +122,6 @@
           both specialized and interdisciplinary projects that integrate these
           fields.<br /><br />
 
-          Currently, I am seeking a 6-month internship in the field of Data
-          Science/Artificial Intelligence.
         </p>
       </div>
     </section>
@@ -344,6 +342,8 @@
       <div class="container">
         <h1 class="title">Projects</h1>
         <hr />
+    
+        <!-- First Row -->
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
@@ -392,6 +392,60 @@
             </div>
           </div>
         </div>
+    
+        <!-- Second Row: NEW Projects -->
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title" style="font-size: 24px">
+                    Anomaly Detection in Streaming Data
+                  </p>
+                  <figure class="image is-4by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-7-modal"
+                      src="img/anomally_detection.png"
+                      alt="Streaming Anomally Detection"
+                    />
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title" style="font-size: 24px">
+                    Reinforcement Learning Preference Optimization: A DPO review
+                  </p>
+                  <figure class="image is-4by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-8-modal"
+                      src="img/DPO_final.png"
+                      alt="DPO vs PPO"
+                    />
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title" style="font-size: 24px">
+                    Diffusion Probabilistic Models Solver: Math and Implementation
+                  </p>
+                  <figure class="image is-4by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-9-modal"
+                      src="img/DPM.jpg"
+                      alt="DPM"
+                    />
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+    
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
@@ -400,15 +454,13 @@
                   <p class="title" style="font-size: 24px">
                     ModelHamiltonian: A Quantum Chemestry library
                   </p>
-                  <p>
-                    <figure class="image is-6by3">
-                      <img
-                        class="modal-trigger"
-                        data-target="project-4-modal"
-                        src="img/modelhamiltonian.png"
-                      />
-                    </figure>
-                  </p>
+                  <figure class="image is-6by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-4-modal"
+                      src="img/modelhamiltonian.png"
+                    />
+                  </figure>
                 </article>
               </div>
               <div class="tile is-parent">
@@ -443,8 +495,9 @@
             </div>
           </div>
         </div>
+    
       </div>
-    </section>
+    </section>  
 
     <section id="education" class="section">
       <div class="container">
@@ -942,6 +995,133 @@
         </footer>
       </div>
     </div>
+    <!-- Modals for missing projects -->
+<div id="project-7-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Anomaly Detection in Streaming Data</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div>
+        <figure class="image is-4by3">
+          <img src="img/anomally_detection.png" alt="Streaming Anomaly Detection" />
+        </figure>
+      </div>
+      <div class="content">
+        <p class="title is-4">
+          <a href="https://github.com/giovanni-br/Anomaly_Detection_StreamRHF_CapyMOA" target="_blank">Link to the project</a>
+        </p>
+        <p>
+          Data streaming algorithms must address limited memory and real-time processing needs, especially in applications such as anomaly detection, fraud prevention, and network monitoring. Traditional methods struggle with these constraints due to their batch nature and the lack of labeled datasets.
+        </p>
+        <p>
+          In this project, we implement and evaluate the StreamRHF algorithm—an unsupervised, tree-based method for streaming anomaly detection—within the CapyMOA Python library. StreamRHF uses kurtosis-based splits to build Random Histogram Forests incrementally, enabling adaptation to concept drifts.
+        </p>
+        <p>
+          We replicate and extend the original work by normalizing anomaly scores for full CapyMOA compatibility. Experimental results show StreamRHF achieves competitive or superior performance compared to state-of-the-art methods like HalfSpaceTrees and Online Isolation Forests.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Streaming Data</span>
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">Random Histogram Forests</span>
+          <span class="tag">CapyMOA</span>
+          <span class="tag">Concept Drift</span>
+          <span class="tag">Online Learning</span>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Close</button>
+    </footer>
+  </div>
+</div>
+
+<div id="project-8-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Reinforcement Learning Preference Optimization: A DPO review</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div>
+        <figure class="image is-4by3">
+          <img src="img/DPO_final.png" alt="DPO vs PPO" />
+        </figure>
+      </div>
+      <div class="content">
+        <p class="title is-4">
+          <a href="https://github.com/giovanni-br/DPO-Implementation" target="_blank">Link to the project</a>
+        </p>
+        <p>
+          Large-scale language models (LLMs) have demonstrated remarkable capabilities in capturing world knowledge and performing reasoning tasks. However, aligning these models with human expectations remains a major challenge due to their unsupervised training.
+        </p>
+        <p>
+          Reinforcement Learning from Human Feedback (RLHF) offers a framework to fine-tune these models using human preferences. But RLHF often involves training an unstable and complex reward model. This project explores Direct Preference Optimization (DPO), a simplified and stable alternative to traditional RLHF.
+        </p>
+        <p>
+          DPO reformulates the reward model and derives an optimal policy using only a classification loss. We dissect the theoretical underpinnings, including the Bradley-Terry model and reward reparameterization. Our implementation replicates the original results and further analyzes performance trade-offs, providing a more stable pathway to human-aligned LLMs.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">DPO</span>
+          <span class="tag">RLHF</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Preference Learning</span>
+          <span class="tag">Policy Optimization</span>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Close</button>
+    </footer>
+  </div>
+</div>
+
+<div id="project-9-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Diffusion Probabilistic Models Solver: Math and Implementation</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div>
+        <figure class="image is-4by3">
+          <img src="img/DPM.jpg" alt="Diffusion Models" />
+        </figure>
+      </div>
+      <div class="content">
+        <p class="title is-4">
+          <a href="https://github.com/giovanni-br/Diffusion_Probablistic_Models_Solver" target="_blank">Link to the project</a>
+        </p>
+        <p>
+          This project re-implements the DPM-Solver-1/2/3 algorithms and dives into the mathematical foundations of diffusion probabilistic models. It explores the transformation of stochastic differential equations into a deterministic probability flow ODE.
+        </p>
+        <p>
+          We review the methods of the original paper "DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps", deriving closed-form solutions using exponential integrators and provide step-by-step demonstrations of forward and reverse SDEs. The focus is on high-order solvers, the variation of constants method, and the role of the transformation function \( \lambda(t) = \log(\alpha(t)/\sigma(t)) \).
+        </p>
+        <p>
+          Also, a comparisson with the previous existent methods was performed based on the ideas of the paper.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Diffusion Models</span>
+          <span class="tag">Applied Mathematics</span>
+          <span class="tag">ODE Solvers</span>
+          <span class="tag">Generative Models</span>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Close</button>
+    </footer>
+  </div>
+</div>
     
     </div>
     <script src="js/bundle.js"></script>
