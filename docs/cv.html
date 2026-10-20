@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giovanni Benedetti da Rosa — CV</title>
+    <style>
+      @page { size: A4; margin: 12mm 14mm; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: #242424; font: 9.4pt/1.34 Arial, sans-serif; }
+      a { color: #176f68; text-decoration: none; }
+      h1, h2, h3, p { margin: 0; }
+      h1 { font-size: 24pt; letter-spacing: -.4pt; }
+      h2 { margin: 11px 0 5px; padding-bottom: 2px; border-bottom: 1.5px solid #2b8f86; color: #246f69; font-size: 11pt; letter-spacing: .7pt; text-transform: uppercase; }
+      h3 { font-size: 10pt; }
+      ul { margin: 3px 0 0 15px; padding: 0; }
+      li { margin: 1px 0; }
+      .header { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; padding-bottom: 8px; border-bottom: 3px solid #2b8f86; }
+      .headline { margin-top: 2px; color: #555; font-size: 11pt; font-weight: 700; }
+      .contact { text-align: right; font-size: 8.8pt; line-height: 1.5; }
+      .summary { margin-top: 7px; }
+      .item { break-inside: avoid; margin-bottom: 6px; }
+      .item-head { display: flex; justify-content: space-between; gap: 12px; }
+      .role { color: #555; font-style: italic; }
+      .date { flex: none; color: #555; font-size: 8.8pt; font-weight: 700; }
+      .publication { padding-left: 8px; border-left: 2px solid #9bc9c5; }
+      .meta { color: #555; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+      .skills strong { color: #246f69; }
+      .small { font-size: 8.7pt; }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1>Giovanni Benedetti da Rosa</h1>
+        <p class="headline">Data Scientist · Computer Vision Engineer</p>
+      </div>
+      <div class="contact">
+        Paris, France<br />
+        <a href="mailto:giovannibenedettidarosa@gmail.com">giovannibenedettidarosa@gmail.com</a><br />
+        <a href="https://linkedin.com/in/giovannibenedettidarosa">linkedin.com/in/giovannibenedettidarosa</a><br />
+        <a href="https://github.com/giovanni-br">github.com/giovanni-br</a>
+      </div>
+    </header>
+
+    <p class="summary">Data scientist and computer vision engineer with a multidisciplinary background in machine learning, mathematical physics, quantum chemistry, and imaging. Experienced in deploying applied ML systems and developing open-source scientific software.</p>
+
+    <h2>Experience</h2>
+    <section class="item">
+      <div class="item-head"><div><h3>TELUS Digital</h3><p class="role">Data Scientist</p></div><p class="date">Aug 2025 – May 2026</p></div>
+      <ul><li>Developed multiple-instance-learning models for disease classification across more than 3 million animal medical images.</li><li>Supported production NER/OCR pipelines and LLM-based transcript extraction and summarization.</li><li>Deployed fraud-detection models to production.</li></ul>
+    </section>
+    <section class="item">
+      <div class="item-head"><div><h3>STMicroelectronics</h3><p class="role">Computer Vision Engineer Intern</p></div><p class="date">Mar 2025 – Sep 2025</p></div>
+      <ul><li>Developed contrastive-learning methods for face anti-spoofing with paired RGB–NIR images.</li><li>Applied knowledge distillation, compression, and denoising for efficient Edge AI deployment.</li></ul>
+    </section>
+    <section class="item">
+      <div class="item-head"><div><h3>Google Summer of Code · QC-Devs</h3><p class="role">Software Developer, ModelHamiltonian</p></div><p class="date">May 2024 – Sep 2024</p></div>
+      <ul><li>Designed APIs for Pariser–Parr–Pople approximations, generalized atom support, and developed occupation- and spin-based Hamiltonian models.</li></ul>
+    </section>
+    <section class="item">
+      <div class="item-head"><div><h3>Quantum Solids Laboratory</h3><p class="role">Instrumentation Engineer Intern</p></div><p class="date">Sep 2021 – Aug 2023</p></div>
+      <ul><li>Built an automated electrochemical system for producing AFM/MFM metallic probes with nanometer precision, including embedded control electronics.</li></ul>
+    </section>
+    <section class="item">
+      <div class="item-head"><div><h3>Correlated Electrons Group</h3><p class="role">Researcher, BdG and Machine Learning</p></div><p class="date">Feb 2022 – Jul 2022</p></div>
+      <ul><li>Used random forests to improve initial guesses in Bogoliubov–de Gennes simulations, reducing computational time by approximately 2×.</li></ul>
+    </section>
+
+    <h2>Publications</h2>
+    <section class="item publication"><h3>Topological Deep Learning Challenge 2025: Expanding the Data Landscape</h3><p class="meta">Proceedings of Machine Learning Research 321:4–14, 2026 · <a href="https://proceedings.mlr.press/v321/bernardez26a.html">PMLR</a></p></section>
+    <section class="item publication"><h3>Paying attention to long-range electron correlation: a size-independent deep-learning approach to predicting molecules' electronic energies from one- and two-electron integrals</h3><p class="meta">V. Chuiko, G. B. Da Rosa, P. W. Ayers · arXiv:2504.03849, 2025 · <a href="https://arxiv.org/abs/2504.03849">arXiv</a></p></section>
+    <section class="item publication"><h3>ModelHamiltonian: A Python-scriptable library for generating 0-, 1-, and 2-electron integrals</h3><p class="meta">The Journal of Chemical Physics 161(13), 132503, 2024 · <a href="https://doi.org/10.1063/5.0219015">DOI</a></p></section>
+
+    <h2>Education</h2>
+    <section class="item"><div class="item-head"><div><h3>École Polytechnique, Institut Polytechnique de Paris</h3><p>M2 in Data Science — Statistics and Applied Mathematics</p></div><p class="date">2024 – 2025</p></div></section>
+    <section class="item"><div class="item-head"><div><h3>Télécom Paris, Institut Polytechnique de Paris</h3><p>Diplôme d'ingénieur — Data Science and Image Processing</p></div><p class="date">2023 – 2025</p></div></section>
+    <section class="item"><div class="item-head"><div><h3>Federal University of Rio Grande do Sul</h3><p>Bachelor's in Engineering Physics</p></div><p class="date">2020 – 2025</p></div></section>
+
+    <div class="grid">
+      <div>
+        <h2>Technical Skills</h2>
+        <p class="skills small"><strong>ML:</strong> PyTorch, TensorFlow, scikit-learn, computer vision, MIL, contrastive learning, LLM pipelines<br /><strong>Software:</strong> Python, C/C++, SQL, Git, OOP, OpenCV<br /><strong>Scientific:</strong> Quantum chemistry, mathematical physics, image processing, time series</p>
+      </div>
+      <div>
+        <h2>Languages</h2>
+        <p class="small">Portuguese (native) · English (advanced) · French (advanced) · Spanish (intermediate)</p>
+      </div>
+    </div>
+  </body>
+</html>

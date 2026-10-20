@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>portfolio</title>
+    <title>Giovanni Benedetti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="img/me-big.jpg" type="image/x-icon" />
+    <link rel="icon" href="img/me_emoji.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.bundle.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
     <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
   </head>
   <body>
@@ -25,15 +26,21 @@
         </div>
         <!-- New Buttons for Experience, Education, and Projects (Mobile) -->
         <div class="navbar-item is-hidden-desktop">
-          <a href="#experience" class="icon is-large has-text-light">
+          <a href="#experience" class="icon is-large has-text-light" aria-label="Experience" title="Experience">
             <i class="fas fa-2x fa-briefcase"></i>
             <!-- Icon for Experience -->
           </a>
         </div>
         <div class="navbar-item is-hidden-desktop">
-          <a href="#education" class="icon is-large has-text-light">
+          <a href="#education" class="icon is-large has-text-light" aria-label="Education" title="Education">
             <i class="fas fa-2x fa-graduation-cap"></i>
             <!-- Icon for Education -->
+          </a>
+        </div>
+        <div class="navbar-item is-hidden-desktop">
+          <a href="#publications" class="icon is-large has-text-light" aria-label="Publications" title="Publications">
+            <i class="fas fa-2x fa-book-open"></i>
+            <!-- Icon for Publications -->
           </a>
         </div>
         <div class="navbar-item is-hidden-desktop">
@@ -57,15 +64,21 @@
           </div>
           <!-- New Buttons for Experience, Education, and Projects (Desktop) -->
           <div class="navbar-item">
-            <a href="#experience" class="icon is-large has-text-light">
+            <a href="#experience" class="icon is-large has-text-light" aria-label="Experience" title="Experience">
               <i class="fas fa-2x fa-briefcase"></i>
               <!-- Icon for Experience -->
             </a>
           </div>
           <div class="navbar-item">
-            <a href="#education" class="icon is-large has-text-light">
+            <a href="#education" class="icon is-large has-text-light" aria-label="Education" title="Education">
               <i class="fas fa-2x fa-graduation-cap"></i>
               <!-- Icon for Education -->
+            </a>
+          </div>
+          <div class="navbar-item">
+            <a href="#publications" class="icon is-large has-text-light" aria-label="Publications" title="Publications">
+              <i class="fas fa-2x fa-book-open"></i>
+              <!-- Icon for Publications -->
             </a>
           </div>
           <div class="navbar-item">
@@ -98,11 +111,11 @@
             <div class="column">
               <h1 class="title is-1">Giovanni Benedetti</h1>
               <h2 class="subtitle">
-                Master 2 (MSc) Data Science and Artificial Intelligence student
+                Data Scientist | Computer Vision Engineer
               </h2>
               <p>
-                <a href="docs/cv.pdf" class="icon has-text-light">
-                  <i class="fas fa-file-word"></i> <strong>Resume</strong>
+                <a href="docs/cv.pdf" class="icon has-text-light" target="_blank" rel="noopener">
+                  <i class="fas fa-file-pdf"></i> <strong>CV</strong>
                 </a>
               </p>
             </div>
@@ -116,14 +129,12 @@
         <h1 class="title">About Me</h1>
         <hr />
         <p>
-          My journey has equipped me with a solid foundation in math, physics
-          engineering, quantum chemistry, artificial intelligence, and imaging
-          technology. I am passionate about applying this diverse expertise in
+          My journey has equipped me with a solid foundation in math, physics,
+          artificial intelligence, and imaging technology.
+          I am passionate about applying this diverse expertise in
           both specialized and interdisciplinary projects that integrate these
-          fields.<br /><br />
+          fields. <b> I'm currently looking for R&D or PhD opportunities.</b>
 
-          Currently, I am seeking a 6-month internship in the field of Data
-          Science/Artificial Intelligence.
         </p>
       </div>
     </section>
@@ -131,7 +142,108 @@
       <div class="container">
         <h1 class="title">Experience</h1>
         <hr />
-        <div class="card">
+              <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                <img src="img/telus.jpg" alt="Telus logo" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Telus Digital</p>
+                <p class="subtitle is-6">
+                  Data Scientist
+                  <time datetime="2025-08">Aug 2025</time> -
+                 <time datetime="2026-05">May 2026</time>
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                Worked as a data science consultant across multiple projects at
+                TELUS Digital. The work included machine learning for disease
+                classification in animal medical images, information extraction
+                and transcript summarization, and fraud detection.<br /><br />
+
+                Key Contributions:
+              </p>
+              <ul>
+                <li>
+                  Developed Multiple Instance Learning (MIL) models
+                  to classify diseases in animal medical images (3M+ images).
+                </li>
+                <li>
+                  Supported production NER/OCR pipelines and LLM-based transcript analysis for information extraction and summarization<br /><br />
+                </li>
+                <li>
+                  Deployed Fraud Detection models in production.
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Multiple Instance Learning</span>
+                <span class="tag">OCR / NLP</span>
+                <span class="tag">LLMs</span>
+                <span class="tag">Fraud Detection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="img/ST.png" alt="STMicroelectronics logo" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">STMicroelectronics</p>
+                <p class="subtitle is-6">
+                  Computer Vision Engineer Intern -
+                  <time datetime="2025-03">Mar 2025</time> -
+                  <time datetime="2025-09">September 2025</time>
+                </p>
+              </div>
+            </div>
+            <div class="content">
+            <p>
+              Contrastive learning methods for face anti-spoofing using paired
+              <strong>RGB–NIR</strong> images, with a focus on <strong>Edge AI</strong> deployment.
+            </p>
+
+            <p>Key developments:</p>
+            <ul>
+              <li>
+                Designed a RGB-NIR model with patch-based cues and
+                contrastive objectives.
+              </li>
+              <li>
+                Knowledge Distillation and model compression for efficient
+                deployment on edge devices.
+              </li>
+              <li>
+                Denoising techniques for RGB–NIR images.
+              </li>
+            </ul>
+
+            <div class="tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">PyTorch Lightning</span>
+              <span class="tag">Contrastive Learning</span>
+              <span class="tag">RGB–NIR</span>
+              <span class="tag">Face Anti-Spoofing</span>
+              <span class="tag">Edge AI</span>
+              <span class="tag">Knowledge Distillation</span>
+              <span class="tag">Image Processing</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </div>
+        </div>
+    </div>
+        <div class="card card-gap">
           <div class="card-content">
             <div class="media">
               <div class="media-left">
@@ -142,9 +254,9 @@
               <div class="media-content">
                 <p class="title is-4">Google Summer of Code</p>
                 <p class="subtitle is-6">
-                  Quantum Chemestry Developer -
-                  <time datetime="2024-5">May 2024</time> -
-                  <time datetime="2024-9">Sepemter 2024</time>
+                  Software Developer
+                  <time datetime="2024-05">May 2024</time> -
+                  <time datetime="2024-09">September 2024</time>
                 </p>
               </div>
             </div>
@@ -175,13 +287,15 @@
               <div class="tags">
                 <span class="tag">Python</span>
                 <span class="tag">OOP</span>
-                <span class="tag">Quantum Chemestry</span>
+                <span class="tag">Quantum Chemistry</span>
                 <span class="tag">Git</span>
-                <span class="tag">Software devellopment</span>
+                <span class="tag">Software Development</span>
               </div>
             </div>
           </div>
         </div>
+
+
         <div class="card card-gap">
           <div class="card-content">
             <div class="media">
@@ -194,8 +308,8 @@
                 <p class="title is-4">Quantum Solids Lab</p>
                 <p class="subtitle is-6">
                   Instrumentation Engineer Intern -
-                  <time datetime="2021-9">September 2021</time> -
-                  <time datetime="2023-8">August 2023</time>
+                  <time datetime="2021-09">September 2021</time> -
+                  <time datetime="2023-08">August 2023</time>
                 </p>
               </div>
             </div>
@@ -204,7 +318,7 @@
                 Developed an automated system for producing metallic probes with
                 nanometer precision, designed for cryogenic AFM(Atomic Force
                 Microscopy) and MFM(Magnetic Force Microscopy) <br /><br />
-                Key Contribuitions:
+                Key Contributions:
               </p>
               <ul>
                 <li>
@@ -227,7 +341,7 @@
               <div class="tags">
                 <span class="tag">c++</span>
                 <span class="tag">Embedded system</span>
-                <span class="tag">Eletronic Design</span>
+                <span class="tag">Electronic Design</span>
                 <span class="tag">Image</span>
               </div>
             </div>
@@ -244,8 +358,8 @@
               <div class="media-content">
                 <p class="title is-4">Marketing and Consumption Research Lab</p>
                 <p class="subtitle is-6">
-                  Researcher - <time datetime="2021-4">April 2021</time> -
-                  <time datetime="2021-8">August 2021</time>
+                  Researcher - <time datetime="2021-04">April 2021</time> -
+                  <time datetime="2021-08">August 2021</time>
                 </p>
               </div>
             </div>
@@ -253,7 +367,7 @@
               <p>
                 Improvement of prediction of energy consumption using satellite
                 nighttime data and LSTM<br /><br />
-                Key Contribuitions:
+                Key Contributions:
               </p>
               <ul>
                 <li>
@@ -295,8 +409,8 @@
                 </p>
                 <p class="subtitle is-6">
                   Researcher in Superconductivity and Machine Learning -
-                  <time datetime="2022-2">February 2022</time> -
-                  <time datetime="2022-7">July 2022</time>
+                  <time datetime="2022-02">February 2022</time> -
+                  <time datetime="2022-07">July 2022</time>
                 </p>
               </div>
             </div>
@@ -304,7 +418,7 @@
               <p>
                 Optimizing Superconductivity Simulations with Bogoliubov–de
                 Gennes (BdG) and Machine Learning (ML) Methods <br /><br />
-                Key Contribuitions:
+                Key Contributions:
               </p>
               <ul>
                 <li>
@@ -329,7 +443,7 @@
               </ul>
               <div class="tags">
                 <span class="tag">Python</span>
-                <span class="tag">Sickit-Learn</span>
+                <span class="tag">Scikit-learn</span>
                 <span class="tag">Random Forest</span>
                 <span class="tag">Mathematical Physics</span>
                 <span class="tag">Optimization</span>
@@ -340,10 +454,59 @@
       </div>
     </section>
 
+    <section id="publications" class="section publications-section">
+      <div class="container">
+        <h1 class="title">Publications</h1>
+        <hr />
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+            <div>
+              <h2 class="title is-5">
+                <a href="https://proceedings.mlr.press/v321/bernardez26a.html" target="_blank" rel="noopener">
+                  Topological Deep Learning Challenge 2025: Expanding the Data Landscape
+                </a>
+              </h2>
+              <p class="publication-meta">Proceedings of Machine Learning Research, Vol. 321</p>
+              <p>Challenge contribution to the TAG-DS 2025 shared benchmarking and data-infrastructure effort.</p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2025</div>
+            <div>
+              <h2 class="title is-5">
+                <a href="https://arxiv.org/abs/2504.03849" target="_blank" rel="noopener">
+                  Paying attention to long-range electron correlation
+                </a>
+              </h2>
+              <p class="publication-meta">arXiv:2504.03849 [quant-ph]</p>
+              <p>A size-independent deep-learning approach to predicting molecular electronic energies from one- and two-electron integrals.</p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2024</div>
+            <div>
+              <h2 class="title is-5">
+                <a href="https://doi.org/10.1063/5.0219015" target="_blank" rel="noopener">
+                  ModelHamiltonian: A Python-scriptable library for generating 0-, 1-, and 2-electron integrals
+                </a>
+              </h2>
+              <p class="publication-meta">The Journal of Chemical Physics, 161(13), 132503</p>
+              <p>Open-source software for building model Hamiltonians in quantum chemistry, condensed-matter physics, and materials science.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="projects" class="section">
       <div class="container">
         <h1 class="title">Projects</h1>
         <hr />
+
+        <!-- First Row -->
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
@@ -392,23 +555,75 @@
             </div>
           </div>
         </div>
+
+        <!-- Second Row: NEW Projects -->
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title" style="font-size: 24px">
-                    ModelHamiltonian: A Quantum Chemestry library
+                    Anomaly Detection in Streaming Data
                   </p>
-                  <p>
-                    <figure class="image is-6by3">
-                      <img
-                        class="modal-trigger"
-                        data-target="project-4-modal"
-                        src="img/modelhamiltonian.png"
-                      />
-                    </figure>
+                  <figure class="image is-4by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-7-modal"
+                      src="img/anomally_detection.png"
+                      alt="Streaming Anomally Detection"
+                    />
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title" style="font-size: 24px">
+                    Reinforcement Learning Preference Optimization: A DPO review
                   </p>
+                  <figure class="image is-4by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-8-modal"
+                      src="img/DPO_final.png"
+                      alt="DPO vs PPO"
+                    />
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title" style="font-size: 24px">
+                    Diffusion Probabilistic Models Solver: Math and Implementation
+                  </p>
+                  <figure class="image is-4by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-9-modal"
+                      src="img/DPM.jpg"
+                      alt="DPM"
+                    />
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title" style="font-size: 24px">
+                    ModelHamiltonian: A Quantum Chemistry Library
+                  </p>
+                  <figure class="image is-6by3">
+                    <img
+                      class="modal-trigger"
+                      data-target="project-4-modal"
+                      src="img/modelhamiltonian.png"
+                    />
+                  </figure>
                 </article>
               </div>
               <div class="tile is-parent">
@@ -443,6 +658,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -616,7 +832,7 @@
               Mean-field approximations are useful in determining numerical
               values for order parameters in phase transitions like in
               superconductivity. Considering the computational complexities of
-              iterativaly diagonalizations in a self consistent approach, one
+              iterative diagonalizations in a self-consistent approach, one
               might wonder: could a machine learn the patterns existing in the
               determination of Δ and find a function f such that Δ ←
               f(T,V,N,Ec,etc)?<br /><br />
@@ -631,7 +847,7 @@
             </p>
             <div class="tags">
               <span class="tag">Python</span>
-              <span class="tag">Sickit-Learn</span>
+              <span class="tag">Scikit-learn</span>
               <span class="tag">Random Forest</span>
               <span class="tag">Mathematical Physics</span>
               <span class="tag">Optimization</span>
@@ -732,8 +948,8 @@
             helping them make quick and informed decisions for diagnosis and
             treatment planning.<br /><br />
 
-            In this context, this project the development and results of skin
-            lesion classification into eight different diagnostic categories.
+            This project presents the development and results of classifying
+            skin lesions into eight different diagnostic categories.
 
             <p></p>
             <div class="tags">
@@ -751,61 +967,12 @@
         </footer>
       </div>
     </div>
-    <div id="project-3-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Skin Lesion Classification</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div>
-            <figure class="image is-16by6">
-              <img src="img/skin-lesion-classification.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p class="title is-4">
-              <a
-                href="https://github.com/giovanni-br/Skin-Lesion-Classification"
-                target="_blank"
-                >Link to the project</a
-              >
-            </p>
-            Detecting and classifying skin lesions is key to diagnosing various
-            skin conditions, including skin cancer, which is a major global
-            health concern. Computer-aided diagnosis (CAD) systems have become
-            promising tools in this area, providing efficient and accurate ways
-            to classify lesions. By integrating machine learning algorithms with
-            medical imaging, CAD systems offer valuable support to doctors,
-            helping them make quick and informed decisions for diagnosis and
-            treatment planning.<br /><br />
-
-            In this context, this project the development and results of skin
-            lesion classification into eight different diagnostic categories.
-
-            <p></p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Sickit-Learn</span>
-              <span class="tag">Random Forest</span>
-              <span class="tag">Mathematical Physics</span>
-              <span class="tag">Optimization</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
     <div id="project-4-modal" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
           <p class="modal-card-title">
-            ModelHamiltonian: A Quantum Chemestry Library
+            ModelHamiltonian: A Quantum Chemistry Library
           </p>
           <button class="delete" aria-label="close"></button>
         </header>
@@ -837,7 +1004,7 @@
             <div class="tags">
               <span class="tag">Object-Oriented Programming (OOP)</span>
               <span class="tag">Software Development</span>
-              <span class="tag">Quantum Chemestry</span>
+              <span class="tag">Quantum Chemistry</span>
               <span class="tag">Git</span>
             </div>
           </div>
@@ -942,7 +1109,134 @@
         </footer>
       </div>
     </div>
-    
+    <!-- Modals for missing projects -->
+<div id="project-7-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Anomaly Detection in Streaming Data</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div>
+        <figure class="image is-4by3">
+          <img src="img/anomally_detection.png" alt="Streaming Anomaly Detection" />
+        </figure>
+      </div>
+      <div class="content">
+        <p class="title is-4">
+          <a href="https://github.com/giovanni-br/Anomaly_Detection_StreamRHF_CapyMOA" target="_blank">Link to the project</a>
+        </p>
+        <p>
+          Data streaming algorithms must address limited memory and real-time processing needs, especially in applications such as anomaly detection, fraud prevention, and network monitoring. Traditional methods struggle with these constraints due to their batch nature and the lack of labeled datasets.
+        </p>
+        <p>
+          In this project, we implement and evaluate the StreamRHF algorithm—an unsupervised, tree-based method for streaming anomaly detection—within the CapyMOA Python library. StreamRHF uses kurtosis-based splits to build Random Histogram Forests incrementally, enabling adaptation to concept drifts.
+        </p>
+        <p>
+          We replicate and extend the original work by normalizing anomaly scores for full CapyMOA compatibility. Experimental results show StreamRHF achieves competitive or superior performance compared to state-of-the-art methods like HalfSpaceTrees and Online Isolation Forests.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Streaming Data</span>
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">Random Histogram Forests</span>
+          <span class="tag">CapyMOA</span>
+          <span class="tag">Concept Drift</span>
+          <span class="tag">Online Learning</span>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Close</button>
+    </footer>
+  </div>
+</div>
+
+<div id="project-8-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Reinforcement Learning Preference Optimization: A DPO review</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div>
+        <figure class="image is-4by3">
+          <img src="img/DPO_final.png" alt="DPO vs PPO" />
+        </figure>
+      </div>
+      <div class="content">
+        <p class="title is-4">
+          <a href="https://github.com/giovanni-br/DPO-Implementation" target="_blank">Link to the project</a>
+        </p>
+        <p>
+          Large-scale language models (LLMs) have demonstrated remarkable capabilities in capturing world knowledge and performing reasoning tasks. However, aligning these models with human expectations remains a major challenge due to their unsupervised training.
+        </p>
+        <p>
+          Reinforcement Learning from Human Feedback (RLHF) offers a framework to fine-tune these models using human preferences. But RLHF often involves training an unstable and complex reward model. This project explores Direct Preference Optimization (DPO), a simplified and stable alternative to traditional RLHF.
+        </p>
+        <p>
+          DPO reformulates the reward model and derives an optimal policy using only a classification loss. We dissect the theoretical underpinnings, including the Bradley-Terry model and reward reparameterization. Our implementation replicates the original results and further analyzes performance trade-offs, providing a more stable pathway to human-aligned LLMs.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">DPO</span>
+          <span class="tag">RLHF</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Preference Learning</span>
+          <span class="tag">Policy Optimization</span>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Close</button>
+    </footer>
+  </div>
+</div>
+
+<div id="project-9-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Diffusion Probabilistic Models Solver: Math and Implementation</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div>
+        <figure class="image is-4by3">
+          <img src="img/DPM.jpg" alt="Diffusion Models" />
+        </figure>
+      </div>
+      <div class="content">
+        <p class="title is-4">
+          <a href="https://github.com/giovanni-br/Diffusion_Probablistic_Models_Solver" target="_blank">Link to the project</a>
+        </p>
+        <p>
+          This project re-implements the DPM-Solver-1/2/3 algorithms and dives into the mathematical foundations of diffusion probabilistic models. It explores the transformation of stochastic differential equations into a deterministic probability flow ODE.
+        </p>
+        <p>
+          We review the methods of the original paper "DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps", deriving closed-form solutions using exponential integrators and provide step-by-step demonstrations of forward and reverse SDEs. The focus is on high-order solvers, the variation of constants method, and the role of the transformation function \( \lambda(t) = \log(\alpha(t)/\sigma(t)) \).
+        </p>
+        <p>
+          Also, a comparisson with the previous existent methods was performed based on the ideas of the paper.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Diffusion Models</span>
+          <span class="tag">Applied Mathematics</span>
+          <span class="tag">ODE Solvers</span>
+          <span class="tag">Generative Models</span>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Close</button>
+    </footer>
+  </div>
+</div>
+
     </div>
     <script src="js/bundle.js"></script>
 

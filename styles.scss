@@ -28,8 +28,28 @@ $link: hsl(171, 100%, 41%);
 a.icon > strong {margin-left:.25rem}
 .modal-card-body div.content {margin:$margin-default}
 
+.publications-section {background:#f7f7f7}
+.publication-list {display:grid; gap:1.25rem}
+.publication-item {
+    display:grid;
+    grid-template-columns:5rem 1fr;
+    gap:1.25rem;
+    padding:1.5rem;
+    border-left:.25rem solid $link;
+    border-radius:.25rem;
+    background:#fff;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.08);
+}
+.publication-item .title {margin-bottom:.4rem}
+.publication-year {font-size:1.1rem; font-weight:900; color:$primary}
+.publication-meta {margin-bottom:.5rem; color:#666; font-weight:700}
+
+@media screen and (max-width: 768px) {
+    .publication-item {grid-template-columns:1fr; gap:.5rem; padding:1.25rem}
+}
+
 // import everything - alternatively import just what you need: https://bulma.io/documentation/overview/modular/
-@import "~bulma/bulma"; 
+@import "~bulma/bulma";
 
 // override specific bulma styles
 .section {padding: 2.15rem 1.5rem}
@@ -42,4 +62,4 @@ a.icon > strong {margin-left:.25rem}
 .carousel-cell {width:100%}
 // Flickity - end
 
- 
+

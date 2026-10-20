@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="img/me_emoji.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.bundle.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
     <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
   </head>
   <body>
@@ -25,15 +26,21 @@
         </div>
         <!-- New Buttons for Experience, Education, and Projects (Mobile) -->
         <div class="navbar-item is-hidden-desktop">
-          <a href="#experience" class="icon is-large has-text-light">
+          <a href="#experience" class="icon is-large has-text-light" aria-label="Experience" title="Experience">
             <i class="fas fa-2x fa-briefcase"></i>
             <!-- Icon for Experience -->
           </a>
         </div>
         <div class="navbar-item is-hidden-desktop">
-          <a href="#education" class="icon is-large has-text-light">
+          <a href="#education" class="icon is-large has-text-light" aria-label="Education" title="Education">
             <i class="fas fa-2x fa-graduation-cap"></i>
             <!-- Icon for Education -->
+          </a>
+        </div>
+        <div class="navbar-item is-hidden-desktop">
+          <a href="#publications" class="icon is-large has-text-light" aria-label="Publications" title="Publications">
+            <i class="fas fa-2x fa-book-open"></i>
+            <!-- Icon for Publications -->
           </a>
         </div>
         <div class="navbar-item is-hidden-desktop">
@@ -57,15 +64,21 @@
           </div>
           <!-- New Buttons for Experience, Education, and Projects (Desktop) -->
           <div class="navbar-item">
-            <a href="#experience" class="icon is-large has-text-light">
+            <a href="#experience" class="icon is-large has-text-light" aria-label="Experience" title="Experience">
               <i class="fas fa-2x fa-briefcase"></i>
               <!-- Icon for Experience -->
             </a>
           </div>
           <div class="navbar-item">
-            <a href="#education" class="icon is-large has-text-light">
+            <a href="#education" class="icon is-large has-text-light" aria-label="Education" title="Education">
               <i class="fas fa-2x fa-graduation-cap"></i>
               <!-- Icon for Education -->
+            </a>
+          </div>
+          <div class="navbar-item">
+            <a href="#publications" class="icon is-large has-text-light" aria-label="Publications" title="Publications">
+              <i class="fas fa-2x fa-book-open"></i>
+              <!-- Icon for Publications -->
             </a>
           </div>
           <div class="navbar-item">
@@ -101,8 +114,8 @@
                 Data Scientist | Computer Vision Engineer
               </h2>
               <p>
-                <a href="docs/cv.pdf" class="icon has-text-light">
-                  <i class="fas fa-file-word"></i> <strong>Resume</strong>
+                <a href="docs/cv.pdf" class="icon has-text-light" target="_blank" rel="noopener">
+                  <i class="fas fa-file-pdf"></i> <strong>CV</strong>
                 </a>
               </p>
             </div>
@@ -148,11 +161,11 @@
             </div>
             <div class="content">
               <p>
-                Data Science Consultant in multiple projects of Telus Digital, 
-                a Canadian telecommunications company. 
-                The projects involved the development of machine learning models for various applications,
-                 including disease classification in animal medical images, information extraction and summarization from transcripts, and fraud detection.<br /><br />
-            
+                Worked as a data science consultant across multiple projects at
+                TELUS Digital. The work included machine learning for disease
+                classification in animal medical images, information extraction
+                and transcript summarization, and fraud detection.<br /><br />
+
                 Key Contributions:
               </p>
               <ul>
@@ -169,10 +182,11 @@
               </ul>
               <div class="tags">
                 <span class="tag">Python</span>
-                <span class="tag">OOP</span>
-                <span class="tag">Quantum Chemestry</span>
-                <span class="tag">Git</span>
-                <span class="tag">Software devellopment</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Multiple Instance Learning</span>
+                <span class="tag">OCR / NLP</span>
+                <span class="tag">LLMs</span>
+                <span class="tag">Fraud Detection</span>
               </div>
             </div>
           </div>
@@ -182,15 +196,15 @@
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="img/ST.png" alt="STMicroeletronics logo" />
+                  <img src="img/ST.png" alt="STMicroelectronics logo" />
                 </figure>
               </div>
               <div class="media-content">
-                <p class="title is-4">STMicroeletronics</p>
+                <p class="title is-4">STMicroelectronics</p>
                 <p class="subtitle is-6">
                   Computer Vision Engineer Intern -
-                  <time datetime="2025-3">Mar 2025</time> -
-                  <time datetime="2025-9">September 2025</time>
+                  <time datetime="2025-03">Mar 2025</time> -
+                  <time datetime="2025-09">September 2025</time>
                 </p>
               </div>
             </div>
@@ -240,9 +254,9 @@
               <div class="media-content">
                 <p class="title is-4">Google Summer of Code</p>
                 <p class="subtitle is-6">
-                  Software Developer 
-                  <time datetime="2024-5">May 2024</time> -
-                  <time datetime="2024-9">September 2024</time>
+                  Software Developer
+                  <time datetime="2024-05">May 2024</time> -
+                  <time datetime="2024-09">September 2024</time>
                 </p>
               </div>
             </div>
@@ -273,9 +287,9 @@
               <div class="tags">
                 <span class="tag">Python</span>
                 <span class="tag">OOP</span>
-                <span class="tag">Quantum Chemestry</span>
+                <span class="tag">Quantum Chemistry</span>
                 <span class="tag">Git</span>
-                <span class="tag">Software devellopment</span>
+                <span class="tag">Software Development</span>
               </div>
             </div>
           </div>
@@ -294,8 +308,8 @@
                 <p class="title is-4">Quantum Solids Lab</p>
                 <p class="subtitle is-6">
                   Instrumentation Engineer Intern -
-                  <time datetime="2021-9">September 2021</time> -
-                  <time datetime="2023-8">August 2023</time>
+                  <time datetime="2021-09">September 2021</time> -
+                  <time datetime="2023-08">August 2023</time>
                 </p>
               </div>
             </div>
@@ -304,7 +318,7 @@
                 Developed an automated system for producing metallic probes with
                 nanometer precision, designed for cryogenic AFM(Atomic Force
                 Microscopy) and MFM(Magnetic Force Microscopy) <br /><br />
-                Key Contribuitions:
+                Key Contributions:
               </p>
               <ul>
                 <li>
@@ -327,7 +341,7 @@
               <div class="tags">
                 <span class="tag">c++</span>
                 <span class="tag">Embedded system</span>
-                <span class="tag">Eletronic Design</span>
+                <span class="tag">Electronic Design</span>
                 <span class="tag">Image</span>
               </div>
             </div>
@@ -344,8 +358,8 @@
               <div class="media-content">
                 <p class="title is-4">Marketing and Consumption Research Lab</p>
                 <p class="subtitle is-6">
-                  Researcher - <time datetime="2021-4">April 2021</time> -
-                  <time datetime="2021-8">August 2021</time>
+                  Researcher - <time datetime="2021-04">April 2021</time> -
+                  <time datetime="2021-08">August 2021</time>
                 </p>
               </div>
             </div>
@@ -353,7 +367,7 @@
               <p>
                 Improvement of prediction of energy consumption using satellite
                 nighttime data and LSTM<br /><br />
-                Key Contribuitions:
+                Key Contributions:
               </p>
               <ul>
                 <li>
@@ -395,8 +409,8 @@
                 </p>
                 <p class="subtitle is-6">
                   Researcher in Superconductivity and Machine Learning -
-                  <time datetime="2022-2">February 2022</time> -
-                  <time datetime="2022-7">July 2022</time>
+                  <time datetime="2022-02">February 2022</time> -
+                  <time datetime="2022-07">July 2022</time>
                 </p>
               </div>
             </div>
@@ -404,7 +418,7 @@
               <p>
                 Optimizing Superconductivity Simulations with Bogoliubov–de
                 Gennes (BdG) and Machine Learning (ML) Methods <br /><br />
-                Key Contribuitions:
+                Key Contributions:
               </p>
               <ul>
                 <li>
@@ -429,7 +443,7 @@
               </ul>
               <div class="tags">
                 <span class="tag">Python</span>
-                <span class="tag">Sickit-Learn</span>
+                <span class="tag">Scikit-learn</span>
                 <span class="tag">Random Forest</span>
                 <span class="tag">Mathematical Physics</span>
                 <span class="tag">Optimization</span>
@@ -440,11 +454,58 @@
       </div>
     </section>
 
+    <section id="publications" class="section publications-section">
+      <div class="container">
+        <h1 class="title">Publications</h1>
+        <hr />
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+            <div>
+              <h2 class="title is-5">
+                <a href="https://proceedings.mlr.press/v321/bernardez26a.html" target="_blank" rel="noopener">
+                  Topological Deep Learning Challenge 2025: Expanding the Data Landscape
+                </a>
+              </h2>
+              <p class="publication-meta">Proceedings of Machine Learning Research, Vol. 321</p>
+              <p>Challenge contribution to the TAG-DS 2025 shared benchmarking and data-infrastructure effort.</p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2025</div>
+            <div>
+              <h2 class="title is-5">
+                <a href="https://arxiv.org/abs/2504.03849" target="_blank" rel="noopener">
+                  Paying attention to long-range electron correlation
+                </a>
+              </h2>
+              <p class="publication-meta">arXiv:2504.03849 [quant-ph]</p>
+              <p>A size-independent deep-learning approach to predicting molecular electronic energies from one- and two-electron integrals.</p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2024</div>
+            <div>
+              <h2 class="title is-5">
+                <a href="https://doi.org/10.1063/5.0219015" target="_blank" rel="noopener">
+                  ModelHamiltonian: A Python-scriptable library for generating 0-, 1-, and 2-electron integrals
+                </a>
+              </h2>
+              <p class="publication-meta">The Journal of Chemical Physics, 161(13), 132503</p>
+              <p>Open-source software for building model Hamiltonians in quantum chemistry, condensed-matter physics, and materials science.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="projects" class="section">
       <div class="container">
         <h1 class="title">Projects</h1>
         <hr />
-    
+
         <!-- First Row -->
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
@@ -494,7 +555,7 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Second Row: NEW Projects -->
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
@@ -547,14 +608,14 @@
             </div>
           </div>
         </div>
-    
+
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title" style="font-size: 24px">
-                    ModelHamiltonian: A Quantum Chemestry library
+                    ModelHamiltonian: A Quantum Chemistry Library
                   </p>
                   <figure class="image is-6by3">
                     <img
@@ -597,9 +658,9 @@
             </div>
           </div>
         </div>
-    
+
       </div>
-    </section>  
+    </section>
 
     <section id="education" class="section">
       <div class="container">
@@ -771,7 +832,7 @@
               Mean-field approximations are useful in determining numerical
               values for order parameters in phase transitions like in
               superconductivity. Considering the computational complexities of
-              iterativaly diagonalizations in a self consistent approach, one
+              iterative diagonalizations in a self-consistent approach, one
               might wonder: could a machine learn the patterns existing in the
               determination of Δ and find a function f such that Δ ←
               f(T,V,N,Ec,etc)?<br /><br />
@@ -786,7 +847,7 @@
             </p>
             <div class="tags">
               <span class="tag">Python</span>
-              <span class="tag">Sickit-Learn</span>
+              <span class="tag">Scikit-learn</span>
               <span class="tag">Random Forest</span>
               <span class="tag">Mathematical Physics</span>
               <span class="tag">Optimization</span>
@@ -887,8 +948,8 @@
             helping them make quick and informed decisions for diagnosis and
             treatment planning.<br /><br />
 
-            In this context, this project the development and results of skin
-            lesion classification into eight different diagnostic categories.
+            This project presents the development and results of classifying
+            skin lesions into eight different diagnostic categories.
 
             <p></p>
             <div class="tags">
@@ -906,61 +967,12 @@
         </footer>
       </div>
     </div>
-    <div id="project-3-modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Skin Lesion Classification</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div>
-            <figure class="image is-16by6">
-              <img src="img/skin-lesion-classification.png" />
-            </figure>
-          </div>
-
-          <div class="content">
-            <p class="title is-4">
-              <a
-                href="https://github.com/giovanni-br/Skin-Lesion-Classification"
-                target="_blank"
-                >Link to the project</a
-              >
-            </p>
-            Detecting and classifying skin lesions is key to diagnosing various
-            skin conditions, including skin cancer, which is a major global
-            health concern. Computer-aided diagnosis (CAD) systems have become
-            promising tools in this area, providing efficient and accurate ways
-            to classify lesions. By integrating machine learning algorithms with
-            medical imaging, CAD systems offer valuable support to doctors,
-            helping them make quick and informed decisions for diagnosis and
-            treatment planning.<br /><br />
-
-            In this context, this project the development and results of skin
-            lesion classification into eight different diagnostic categories.
-
-            <p></p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Sickit-Learn</span>
-              <span class="tag">Random Forest</span>
-              <span class="tag">Mathematical Physics</span>
-              <span class="tag">Optimization</span>
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-      </div>
-    </div>
     <div id="project-4-modal" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
           <p class="modal-card-title">
-            ModelHamiltonian: A Quantum Chemestry Library
+            ModelHamiltonian: A Quantum Chemistry Library
           </p>
           <button class="delete" aria-label="close"></button>
         </header>
@@ -992,7 +1004,7 @@
             <div class="tags">
               <span class="tag">Object-Oriented Programming (OOP)</span>
               <span class="tag">Software Development</span>
-              <span class="tag">Quantum Chemestry</span>
+              <span class="tag">Quantum Chemistry</span>
               <span class="tag">Git</span>
             </div>
           </div>
@@ -1224,7 +1236,7 @@
     </footer>
   </div>
 </div>
-    
+
     </div>
     <script src="js/bundle.js"></script>
 
